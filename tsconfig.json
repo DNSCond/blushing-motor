@@ -1,9 +1,9 @@
 {
-  // Only build references.
-  "files": [],
-  "references": [
-    { "path": "./src/client" },
-    { "path": "./src/shared" },
-    { "path": "./src/server" }
-  ]
+  "extends": "@devvit/public-api/devvit.tsconfig.json",
+  "compilerOptions": {
+    "lib": [
+      "DOM",
+      "es2023"
+    ]
+  }
 }

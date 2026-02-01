@@ -1,24 +1,29 @@
-## Devvit Hello World Starter
+# Custom Mute (u/custommute)
 
-A starter to build web applications on Reddit's developer platform
+Mute anyone for any duration except if its longer than 28 days or less than 15 seconds
 
-- [Devvit](https://developers.reddit.com/): A way to build and deploy immersive games on Reddit
-- [Express](https://expressjs.com/): For backend logic
-- [Typescript](https://www.typescriptlang.org/): For type safety
+## howto use
 
-## Getting Started
+its simple write `!mute <time> <timeUnit>` and it works `!muteuser` and `!mute user` work too.
 
-> Make sure you have Node 22 downloaded on your machine before running!
+`<time>` is any number as long as its written in base 10 with digits only.
 
-1. Run `npm create devvit@latest --template=hello-world`
-2. Go through the installation wizard. You will need to create a Reddit account and connect it to Reddit developers
-3. Copy the command on the success page into your terminal
+`<timeUnit>` is one of this:
 
-## Commands
+- `hour`
+- `minute`
+- `second`
+- `day`
+- `h`
+- `m`
+- `s`
+- `d`
 
-- `npm run dev`: Starts a development server where you can develop your application live on Reddit.
-- `npm run build`: Builds your client and server projects
-- `npm run deploy`: Uploads a new version of your app
-- `npm run launch`: Publishes your app for review
-- `npm run login`: Logs your CLI into Reddit
-- `npm run check`: Type checks, lints, and prettifies your app
+you can add a '`s`' to it.
+
+uninstalling the app will result in the user not getting unmuted when they are supposed to.
+
+## u/custommute's socials
+
+[https://developers.reddit.com/apps/custommute/](https://developers.reddit.com/apps/custommute/),
+[https://github.com/DNSCond/custommute](https://github.com/DNSCond/custommute)
